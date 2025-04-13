@@ -1,0 +1,110 @@
+EDA Report for: Patients
+==================================================
+
+Basic Info:
+Shape: (1162, 28)
+Columns: ['Id', 'BIRTHDATE', 'DEATHDATE', 'SSN', 'DRIVERS', 'PASSPORT', 'PREFIX', 'FIRST', 'MIDDLE', 'LAST', 'SUFFIX', 'MAIDEN', 'MARITAL', 'RACE', 'ETHNICITY', 'GENDER', 'BIRTHPLACE', 'ADDRESS', 'CITY', 'STATE', 'COUNTY', 'FIPS', 'ZIP', 'LAT', 'LON', 'HEALTHCARE_EXPENSES', 'HEALTHCARE_COVERAGE', 'INCOME']
+Memory Usage: 1550.63 KB
+
+Data Types:
+Id                      object
+BIRTHDATE               object
+DEATHDATE               object
+SSN                     object
+DRIVERS                 object
+PASSPORT                object
+PREFIX                  object
+FIRST                   object
+MIDDLE                  object
+LAST                    object
+SUFFIX                  object
+MAIDEN                  object
+MARITAL                 object
+RACE                    object
+ETHNICITY               object
+GENDER                  object
+BIRTHPLACE              object
+ADDRESS                 object
+CITY                    object
+STATE                   object
+COUNTY                  object
+FIPS                   float64
+ZIP                      int64
+LAT                    float64
+LON                    float64
+HEALTHCARE_EXPENSES    float64
+HEALTHCARE_COVERAGE    float64
+INCOME                   int64
+dtype: object
+
+Column Type Distribution:
+Numerical: 7
+Categorical: 21
+Datetime: 0
+
+Number of duplicate rows: 0
+
+Columns with null values:
+DEATHDATE    1000
+DRIVERS       203
+PASSPORT      273
+PREFIX        244
+MIDDLE        232
+SUFFIX       1151
+MAIDEN        848
+MARITAL       414
+FIPS          319
+dtype: int64
+
+Unique Values per Column:
+Id: 1162 unique values
+BIRTHDATE: 984 unique values
+DEATHDATE: 162 unique values
+SSN: 1162 unique values
+DRIVERS: 953 unique values
+PASSPORT: 889 unique values
+PREFIX: 3 unique values
+FIRST: 998 unique values
+MIDDLE: 821 unique values
+LAST: 486 unique values
+SUFFIX: 2 unique values
+MAIDEN: 228 unique values
+MARITAL: 4 unique values
+RACE: 6 unique values
+ETHNICITY: 2 unique values
+GENDER: 2 unique values
+BIRTHPLACE: 315 unique values
+ADDRESS: 1162 unique values
+CITY: 273 unique values
+STATE: 1 unique values
+COUNTY: 14 unique values
+FIPS: 15 unique values
+ZIP: 256 unique values
+LAT: 1162 unique values
+LON: 1162 unique values
+HEALTHCARE_EXPENSES: 1158 unique values
+HEALTHCARE_COVERAGE: 1096 unique values
+INCOME: 999 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+Id, SSN, ADDRESS, LAT, LON, HEALTHCARE_EXPENSES, HEALTHCARE_COVERAGE
+
+Summary Statistics for Numerical Columns:
+                      count           mean            std           min  \
+FIPS                  843.0   25061.989324     924.451527  25001.000000   
+ZIP                  1162.0    1413.020654     956.399374      0.000000   
+LAT                  1162.0      42.261384       0.278758     41.249282   
+LON                  1162.0     -71.408823       0.668854    -73.392596   
+HEALTHCARE_EXPENSES  1162.0  190732.601007  255849.781712    100.000000   
+HEALTHCARE_COVERAGE  1162.0  364915.589294  493150.598049      0.000000   
+INCOME               1162.0  115818.275387  168175.323453     88.000000   
+
+                              25%            50%            75%           max  
+FIPS                 25013.000000   25017.000000   25025.000000  4.400700e+04  
+ZIP                      0.000000    1810.000000    2151.000000  2.861000e+03  
+LAT                     42.107069      42.303359      42.440704  4.289435e+01  
+LON                    -71.726544     -71.168781     -71.016722 -6.997134e+01  
+HEALTHCARE_EXPENSES  25984.342500   93488.780000  238214.632500  1.842156e+06  
+HEALTHCARE_COVERAGE  15626.372500  145508.720000  579337.692500  4.779702e+06  
+INCOME               33232.500000   66058.500000  128911.750000  9.715000e+05  
+
