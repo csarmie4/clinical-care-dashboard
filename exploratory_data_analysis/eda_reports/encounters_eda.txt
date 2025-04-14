@@ -1,0 +1,73 @@
+EDA Report for: encounters
+==================================================
+
+Basic Info:
+Shape: (79911, 15)
+Columns: ['Id', 'START', 'STOP', 'PATIENT', 'ORGANIZATION', 'PROVIDER', 'PAYER', 'ENCOUNTERCLASS', 'CODE', 'DESCRIPTION', 'BASE_ENCOUNTER_COST', 'TOTAL_CLAIM_COST', 'PAYER_COVERAGE', 'REASONCODE', 'REASONDESCRIPTION']
+Memory Usage: 69344.34 KB
+
+Data Types:
+Id                      object
+START                   object
+STOP                    object
+PATIENT                 object
+ORGANIZATION            object
+PROVIDER                object
+PAYER                   object
+ENCOUNTERCLASS          object
+CODE                     int64
+DESCRIPTION             object
+BASE_ENCOUNTER_COST    float64
+TOTAL_CLAIM_COST       float64
+PAYER_COVERAGE         float64
+REASONCODE             float64
+REASONDESCRIPTION       object
+dtype: object
+
+Column Type Distribution:
+Numerical: 5
+Categorical: 10
+Datetime: 0
+
+Number of duplicate rows: 0
+
+Columns with null values:
+REASONCODE           28045
+REASONDESCRIPTION    28045
+dtype: int64
+
+Unique Values per Column:
+Id: 79911 unique values
+START: 78669 unique values
+STOP: 79789 unique values
+PATIENT: 1162 unique values
+ORGANIZATION: 716 unique values
+PROVIDER: 716 unique values
+PAYER: 10 unique values
+ENCOUNTERCLASS: 10 unique values
+CODE: 55 unique values
+DESCRIPTION: 55 unique values
+BASE_ENCOUNTER_COST: 10 unique values
+TOTAL_CLAIM_COST: 21221 unique values
+PAYER_COVERAGE: 21495 unique values
+REASONCODE: 147 unique values
+REASONDESCRIPTION: 147 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+Id, START, STOP, PATIENT, TOTAL_CLAIM_COST, PAYER_COVERAGE
+
+Summary Statistics for Numerical Columns:
+                       count          mean           std        min  \
+CODE                 79911.0  5.128204e+10  4.808612e+12  1505002.0   
+BASE_ENCOUNTER_COST  79911.0  1.084546e+02  2.703820e+01       75.0   
+TOTAL_CLAIM_COST     79911.0  2.398919e+03  6.324935e+03       75.0   
+PAYER_COVERAGE       79911.0  1.735781e+03  5.325720e+03        0.0   
+REASONCODE           51866.0  6.892462e+11  1.046402e+13  3718001.0   
+
+                              25%           50%           75%           max  
+CODE                 1.853470e+08  1.853470e+08  3.083350e+08  4.531310e+14  
+BASE_ENCOUNTER_COST  8.555000e+01  8.555000e+01  1.368000e+02  1.461800e+02  
+TOTAL_CLAIM_COST     5.358700e+02  8.601600e+02  1.791030e+03  2.520329e+05  
+PAYER_COVERAGE       3.555000e+01  5.211100e+02  1.200850e+03  2.519979e+05  
+REASONCODE           6.638301e+07  1.560730e+08  4.318570e+08  4.425710e+14  
+

@@ -1,0 +1,59 @@
+EDA Report for: procedures
+==================================================
+
+Basic Info:
+Shape: (205694, 10)
+Columns: ['START', 'STOP', 'PATIENT', 'ENCOUNTER', 'SYSTEM', 'CODE', 'DESCRIPTION', 'BASE_COST', 'REASONCODE', 'REASONDESCRIPTION']
+Memory Usage: 118699.34 KB
+
+Data Types:
+START                 object
+STOP                  object
+PATIENT               object
+ENCOUNTER             object
+SYSTEM                object
+CODE                   int64
+DESCRIPTION           object
+BASE_COST            float64
+REASONCODE           float64
+REASONDESCRIPTION     object
+dtype: object
+
+Column Type Distribution:
+Numerical: 3
+Categorical: 7
+Datetime: 0
+
+Number of duplicate rows: 0
+
+Columns with null values:
+REASONCODE           107614
+REASONDESCRIPTION    107614
+dtype: int64
+
+Unique Values per Column:
+START: 177395 unique values
+STOP: 189956 unique values
+PATIENT: 1161 unique values
+ENCOUNTER: 59082 unique values
+SYSTEM: 1 unique values
+CODE: 336 unique values
+DESCRIPTION: 336 unique values
+BASE_COST: 23366 unique values
+REASONCODE: 92 unique values
+REASONDESCRIPTION: 92 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+START, STOP, PATIENT, ENCOUNTER, BASE_COST
+
+Summary Statistics for Numerical Columns:
+               count          mean           std         min          25%  \
+CODE        205694.0  4.370569e+13  6.231167e+14  3457005.00  171207006.0   
+BASE_COST   205694.0  9.252896e+02  2.125550e+03        0.32        431.4   
+REASONCODE   98080.0  7.683897e+11  7.176197e+12  5602001.00   66383009.0   
+
+                    50%          75%           max  
+CODE        265764009.0  710824005.0  1.633503e+16  
+BASE_COST         431.4        431.4  2.510239e+05  
+REASONCODE   72892002.0  103697008.0  6.781100e+13  
+

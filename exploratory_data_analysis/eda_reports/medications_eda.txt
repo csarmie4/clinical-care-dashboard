@@ -1,0 +1,72 @@
+EDA Report for: medications
+==================================================
+
+Basic Info:
+Shape: (75383, 13)
+Columns: ['START', 'STOP', 'PATIENT', 'PAYER', 'ENCOUNTER', 'CODE', 'DESCRIPTION', 'BASE_COST', 'PAYER_COVERAGE', 'DISPENSES', 'TOTALCOST', 'REASONCODE', 'REASONDESCRIPTION']
+Memory Usage: 48769.84 KB
+
+Data Types:
+START                 object
+STOP                  object
+PATIENT               object
+PAYER                 object
+ENCOUNTER             object
+CODE                   int64
+DESCRIPTION           object
+BASE_COST            float64
+PAYER_COVERAGE       float64
+DISPENSES              int64
+TOTALCOST            float64
+REASONCODE           float64
+REASONDESCRIPTION     object
+dtype: object
+
+Column Type Distribution:
+Numerical: 6
+Categorical: 7
+Datetime: 0
+
+Number of duplicate rows: 0
+
+Columns with null values:
+STOP                 3160
+REASONCODE           9411
+REASONDESCRIPTION    9411
+dtype: int64
+
+Unique Values per Column:
+START: 43835 unique values
+STOP: 42161 unique values
+PATIENT: 1137 unique values
+PAYER: 10 unique values
+ENCOUNTER: 41431 unique values
+CODE: 252 unique values
+DESCRIPTION: 261 unique values
+BASE_COST: 8611 unique values
+PAYER_COVERAGE: 6514 unique values
+DISPENSES: 405 unique values
+TOTALCOST: 9878 unique values
+REASONCODE: 58 unique values
+REASONDESCRIPTION: 58 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+START, STOP, PATIENT, ENCOUNTER, BASE_COST, PAYER_COVERAGE, TOTALCOST
+
+Summary Statistics for Numerical Columns:
+                  count          mean           std         min          25%  \
+CODE            75383.0  5.014750e+05  4.765486e+05   105078.00    205923.00   
+BASE_COST       75383.0  9.406067e+01  9.772706e+02        0.01         0.91   
+PAYER_COVERAGE  75383.0  5.950993e+01  8.231103e+02        0.00         0.00   
+DISPENSES       75383.0  5.462253e+00  3.569513e+01        1.00         1.00   
+TOTALCOST       75383.0  1.404542e+03  9.873078e+04        0.01         2.12   
+REASONCODE      65972.0  2.392253e+12  1.280063e+13  5602001.00  59621000.00   
+
+                         50%           75%           max  
+CODE            3.107980e+05  7.457520e+05  2.563431e+06  
+BASE_COST       2.921000e+01  1.299400e+02  1.039584e+05  
+PAYER_COVERAGE  9.100000e-01  7.994000e+01  1.039084e+05  
+DISPENSES       1.000000e+00  1.000000e+00  1.497000e+03  
+TOTALCOST       2.921000e+01  1.299400e+02  2.110356e+07  
+REASONCODE      1.036970e+08  2.717370e+08  1.322810e+14  
+

@@ -1,0 +1,42 @@
+EDA Report for: immunizations
+==================================================
+
+Basic Info:
+Shape: (16930, 6)
+Columns: ['DATE', 'PATIENT', 'ENCOUNTER', 'CODE', 'DESCRIPTION', 'BASE_COST']
+Memory Usage: 6222.74 KB
+
+Data Types:
+DATE            object
+PATIENT         object
+ENCOUNTER       object
+CODE             int64
+DESCRIPTION     object
+BASE_COST      float64
+dtype: object
+
+Column Type Distribution:
+Numerical: 2
+Categorical: 4
+Datetime: 0
+
+Number of duplicate rows: 0
+
+No columns with null values.
+
+Unique Values per Column:
+DATE: 11844 unique values
+PATIENT: 1160 unique values
+ENCOUNTER: 11943 unique values
+CODE: 22 unique values
+DESCRIPTION: 25 unique values
+BASE_COST: 1 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+DATE, PATIENT, ENCOUNTER
+
+Summary Statistics for Numerical Columns:
+             count        mean        std    min    25%    50%    75%    max
+CODE       16930.0  120.543355  50.427333    3.0  113.0  140.0  140.0  212.0
+BASE_COST  16930.0  136.000000   0.000000  136.0  136.0  136.0  136.0  136.0
+

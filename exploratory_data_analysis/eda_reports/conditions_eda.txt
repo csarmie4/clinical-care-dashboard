@@ -1,0 +1,48 @@
+EDA Report for: conditions
+==================================================
+
+Basic Info:
+Shape: (45422, 7)
+Columns: ['START', 'STOP', 'PATIENT', 'ENCOUNTER', 'SYSTEM', 'CODE', 'DESCRIPTION']
+Memory Usage: 20974.01 KB
+
+Data Types:
+START          object
+STOP           object
+PATIENT        object
+ENCOUNTER      object
+SYSTEM         object
+CODE            int64
+DESCRIPTION    object
+dtype: object
+
+Column Type Distribution:
+Numerical: 1
+Categorical: 6
+Datetime: 0
+
+Number of duplicate rows: 0
+
+Columns with null values:
+STOP    10732
+dtype: int64
+
+Unique Values per Column:
+START: 10458 unique values
+STOP: 6946 unique values
+PATIENT: 1162 unique values
+ENCOUNTER: 28838 unique values
+SYSTEM: 1 unique values
+CODE: 260 unique values
+DESCRIPTION: 260 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+START, STOP, PATIENT, ENCOUNTER
+
+Summary Statistics for Numerical Columns:
+        count          mean           std        min         25%          50%  \
+CODE  45422.0  5.743100e+13  7.832355e+14  4557003.0  73595000.0  224299000.0   
+
+              75%           max  
+CODE  314529007.0  1.093988e+16  
+

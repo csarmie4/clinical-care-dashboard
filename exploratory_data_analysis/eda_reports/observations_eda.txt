@@ -1,0 +1,70 @@
+EDA Report for: observations
+==================================================
+
+Basic Info:
+Shape: (1028805, 9)
+Columns: ['DATE', 'PATIENT', 'ENCOUNTER', 'CATEGORY', 'CODE', 'DESCRIPTION', 'VALUE', 'UNITS', 'TYPE']
+Memory Usage: 677422.75 KB
+
+Data Types:
+DATE           object
+PATIENT        object
+ENCOUNTER      object
+CATEGORY       object
+CODE           object
+DESCRIPTION    object
+VALUE          object
+UNITS          object
+TYPE           object
+dtype: object
+
+Column Type Distribution:
+Numerical: 0
+Categorical: 9
+Datetime: 0
+
+Number of duplicate rows: 220
+
+Columns with null values:
+ENCOUNTER     30531
+CATEGORY      30531
+UNITS        266559
+dtype: int64
+
+Unique Values per Column:
+DATE: 102401 unique values
+PATIENT: 1162 unique values
+ENCOUNTER: 46953 unique values
+CATEGORY: 8 unique values
+CODE: 265 unique values
+DESCRIPTION: 282 unique values
+VALUE: 7218 unique values
+UNITS: 49 unique values
+TYPE: 2 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+DATE, PATIENT, ENCOUNTER, VALUE
+
+Summary Statistics for Numerical Columns:
+               count  unique  \
+DATE         1028805  102401   
+PATIENT      1028805    1162   
+ENCOUNTER     998274   46953   
+CATEGORY      998274       8   
+CODE         1028805     265   
+DESCRIPTION  1028805     282   
+VALUE        1028805    7218   
+UNITS         762246      49   
+TYPE         1028805       2   
+
+                                                           top    freq  
+DATE                                      2016-05-06T19:27:04Z     109  
+PATIENT                   f473bbb3-1355-11aa-3b51-19de9ea47276   16013  
+ENCOUNTER                 7c67b30e-e8ed-7f0c-bc66-c06ff3857189     725  
+CATEGORY                                            laboratory  481501  
+CODE                                                   72514-3   38499  
+DESCRIPTION  Pain severity - 0-10 verbal numeric rating [Sc...   38499  
+VALUE                                                       No   92118  
+UNITS                                                    mg/dL  153118  
+TYPE                                                   numeric  633606  
+

@@ -1,0 +1,56 @@
+EDA Report for: careplans
+==================================================
+
+Basic Info:
+Shape: (3931, 9)
+Columns: ['Id', 'START', 'STOP', 'PATIENT', 'ENCOUNTER', 'CODE', 'DESCRIPTION', 'REASONCODE', 'REASONDESCRIPTION']
+Memory Usage: 2185.11 KB
+
+Data Types:
+Id                    object
+START                 object
+STOP                  object
+PATIENT               object
+ENCOUNTER             object
+CODE                   int64
+DESCRIPTION           object
+REASONCODE           float64
+REASONDESCRIPTION     object
+dtype: object
+
+Column Type Distribution:
+Numerical: 2
+Categorical: 7
+Datetime: 0
+
+Number of duplicate rows: 0
+
+Columns with null values:
+STOP                 1983
+REASONCODE           1867
+REASONDESCRIPTION    1867
+dtype: int64
+
+Unique Values per Column:
+Id: 3931 unique values
+START: 3180 unique values
+STOP: 1542 unique values
+PATIENT: 1075 unique values
+ENCOUNTER: 3826 unique values
+CODE: 38 unique values
+DESCRIPTION: 38 unique values
+REASONCODE: 59 unique values
+REASONDESCRIPTION: 59 unique values
+
+Potential High Cardinality Columns (nunique > 1000):
+Id, START, STOP, PATIENT, ENCOUNTER
+
+Summary Statistics for Numerical Columns:
+             count          mean           std         min          25%  \
+CODE        3931.0  4.374491e+08  2.747102e+08  47387005.0  134435003.0   
+REASONCODE  2064.0  1.023844e+11  2.584721e+12  15724005.0   59621000.0   
+
+                    50%          75%           max  
+CODE        443402002.0  735985000.0  7.810870e+08  
+REASONCODE   86919504.5  370247008.0  6.781100e+13  
+
